@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+void printmonth (const int month,const int startday, const bool leap);
+
+int main(void)
+{
+
+//********************************************************************
+//* Print just a bunch of Random months - Assignment #3              *
+//********************************************************************
+
+  printmonth(1,0,false);   // Print January 1st, on a Sunday
+  printmonth(2,1,true);    // Print February 1st leap year, on Monday
+ // printmonth(1,2,false);   // Print January 1st, on a Tuesday
+ // printmonth(2,3,false);   // Print February 1st not leap, on Wednesday
+ // printmonth(1,4,false);   // Print January 1st, on a Thursday
+ // printmonth(2,5,false);   // Print February 1st, on a Friday
+ // printmonth(1,6,false);   // Print January 1st, on a Saturday
+ // printmonth(6,1,false);   // Print June 1st, on Monday
+ // printmonth(12,4,false);  // Print December 12th, on a Thursday
+
+return 0;
+}
+//********************************************************************
+// Put code here.                                                    *
+//********************************************************************
+
+void printmonth (const int m, const int d, const bool l)
+{
+
+    cout << "\n Sun Mon Tue Wed Thr Fri Sat\n";
+    for (int d = 1; d < 31; d++)
+    {
+        cout << setw(4) << d;
+    }
+
+   // const string MONTHS [13] = {" ","January","February","March","April","May","June","July","August","September","October","November","December"};
+
+   // int MONTH_DAYS[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+
+   // if(months == 2 && leapyear == true)
+   //     DAYS = 29;
+   //  else
+   //     DAYS = MONTH_DAYS[months];
+
+   // string startday [7] = {"Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"};
+}
